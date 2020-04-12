@@ -21,3 +21,7 @@ git push origin master --tags
 git checkout develop
 git pull origin develop
 git merge master
+
+git commit -am "index"
+git push origin develop
+git flow hotfix start 0.1.1
