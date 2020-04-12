@@ -1,0 +1,23 @@
+git flow init
+git flow feature start login
+git flow feature finish login
+git flow release start 0.2.0
+
+git flow release finish '0.2.0'
+git merge master
+git log
+
+git push origin develop --tags
+
+git commit -am "Registre-se ok"
+git flow release start '0.2.1'
+git push origin release/0.2.1
+git checkout master
+git branch
+git branch -D release/0.2.1
+git tag 0.2.1
+git tag
+git push origin master --tags
+git checkout develop
+git pull origin develop
+git merge master
